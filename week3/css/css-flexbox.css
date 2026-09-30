@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
+.big-box{
+    display: flex;
+}
+body{
+    background-color: rgb(248, 239, 239);
+}
+h1{
+    text-align: center;
+}
+h2{
+    font-family: 'Archivo Black', sans-serif;
+}
+div.bg-residential {
+    background-color: #fffffd;
+    padding: 20px;
+    margin: 10px;
+    gap: 10px;
+    border-radius: 10px;
+    max-width: 1024px;
+}
+div.bg-commercial {
+    background-color: #fffffd;
+    padding: 20px;
+    margin: 10px;
+    gap: 10px;
+    border-radius: 10px;
+    max-width: 1024px;
+}
+div.bg-infrastructure {
+    background-color: #fffffd;
+    padding: 20px;
+    margin: 10px;
+    gap: 10px;
+    border-radius: 10px;
+    max-width: 1024px;
+}
+
+img{
+    border-radius: 10px;
+}

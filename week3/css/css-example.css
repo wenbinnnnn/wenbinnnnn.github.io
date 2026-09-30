@@ -1,0 +1,14 @@
+.big-box{
+    display: flex;
+}
+div.bg-yellow {
+    background-color: #FFF4A3;
+}
+
+div.bg-pink {
+    background-color: #FFC0C7;
+}
+
+div.bg-blue {
+    background-color: #D9EEE1;
+}

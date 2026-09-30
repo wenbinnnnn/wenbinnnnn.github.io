@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Isometra&family=Libre+Caslon+Condensed:ital,wght@0,400..700;1,400..700&family=Ma+Shan+Zheng&family=Oswald:wght@200..700&display=swap');
+
+
+h1 {
+    font-family: 'Isometra', sans-serif;
+    font-weight: normal;
+    text-align: center;
+    border-bottom: 2px dotted black;
+    border-top: 2px dashed black;
+    border-radius: 10px;
+    text-shadow: 2px 2px 5px rgb(9, 9, 9);
+}
+
+p {
+    font-family: 'Libre Caslon Condensed', serif;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: justify;
+    line-height: 2.5;
+    background-color: lightblue;
+    background-image: url('/week3/images/bg.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+br {
+    font-family: 'Oswald', sans-serif;
+    font-style: italic;
+}
+h2 {
+    font-family: 'Ma Shan Zheng', cursive;
+    font-size: 50px;
+}
+.text-bold {
+    font-weight: bold;
+    background-color: yellow;
+}
