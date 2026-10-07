@@ -12,3 +12,7 @@ div.bg-pink {
 div.bg-blue {
     background-color: #D9EEE1;
 }
+
+.box {
+    padding: 10px;
+}
