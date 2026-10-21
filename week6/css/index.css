@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.banner {
+    min-height: 500px;
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    padding: 60px;
+}
+
+.banner-content {
+    width: 50%;
+}
+
+.subscribe-form {
+    display: inline-block;
+    padding: 2px;
+    background-color: white;
+    border-radius: 3px;
+}
+
+.subscribe-button {
+    background-color: #F84646;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 3px;
+}
+
+.email-input {
+    border: none;
+}
+
+.email-input:focus {
+    outline: none;
+}
+
+.menuitems {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.request {
+    background-color: rgb(248, 70, 70);
+    color: white;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.banner2 {
+    margin: auto;
+    text-align: center;
+}
+
+.sixlogo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.item {
+    width: calc(33.33% - 20px);
+}
+
+.sixlogo img {
+    filter: grayscale(100%);
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.banner3{
+    background-color: #F84646;
+    text-align: center;
+    color: white;
+}
+
+
+.banner4{
+    text-align: center;
+}
+.Keşfet{
+    background-color: #F84646;
+    border: none;
+    border-radius: 3px;
+    width: 44px;
+    height: 24px;
+}
+
+@media (max-width: 1024px) {
+    .banner {
+        background-position: center 50%;
+    }
+
+    .banner-content {
+        width: 60%;
+    }
+}
+
+@media (max-width: 600px) {
+    .banner {
+        background-position: center 80%;
+    }
+
+    .banner-content {
+        width: 100%;
+        text-align: center;
+    }
+}
