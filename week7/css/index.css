@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+}
+
+.header {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px;
+    width: 100%;
+    max-width: 1100px;
+    z-index: 1100;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+}
+
+.bannerleft {
+    min-height: 500px;
+    background-color: black;
+    background-size: cover;
+    padding: 2%;
+    color: white;
+}
+
+.banner-content {
+    padding-top: 100px;
+    font-family: "Work Sans", sans-serif;
+    font-size: 20px;
+}
+
+.banner-desc {
+    padding-top: 20px;
+    font-family: "Lora", sans-serif;
+    font-size: 19px;
+}
+
+.banner-welcome {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: larger;
+}
+
+.bannerright {
+    flex: 1;
+    position: relative;
+
+}
+
+.menuitems {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.hamburger {
+    display: none;
+    width: 20px;
+    cursor: pointer;
+}
+
+.header2 {
+    text-align: center;
+}
+
+.sfh {
+    padding-top: 80px;
+    font-size: 15px;
+    font-style: italic;
+}
+
+.popular{
+    font-size: 20px;
+}
+
+.three {
+    padding: 80px 0;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    display: flex;
+    gap: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+.three .food{
+    flex: 1;
+}
+
+.three .img{
+    background-image: url(../images/Dessert.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 150px;
+}
+.three .special{
+    flex: 2;
+}
+
+.three .special .img{
+    background-image: url(../images/Chef\ Specials.jpg);
+    height: 350px;
+}
+
+.three .seasonal .img{
+    background-image: url(../images/Seasonal.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 150px;
+}
+
+@media (max-width: 1024px) {
+    .menuitems {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+@media (media-weight: 640px) {
+    .menuitems {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}

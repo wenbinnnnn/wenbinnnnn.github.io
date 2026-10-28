@@ -75,17 +75,21 @@ body {
     grid-template-columns: repeat(3, 1fr);
 }
 
-.banner3{
+.banner3 {
     background-color: #F84646;
     text-align: center;
     color: white;
 }
 
 
-.banner4{
-    text-align: center;
+.banner4 {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
 }
-.Keşfet{
+
+.Keşfet {
     background-color: #F84646;
     border: none;
     border-radius: 3px;
