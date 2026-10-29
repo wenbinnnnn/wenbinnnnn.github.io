@@ -157,19 +157,32 @@ body {
 }
 
 .header4 {
+    min-height: 480px;
+    background-image:url(../images/Rectangle\ 9.png), url(../images/Environment.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
     justify-content: center;
-    background-color: black;
+    align-items: center;
     color: white;
+    text-align: center;
 }
 
 .last {
     text-align: center;
     font-size: 19px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
 .logo4 {
-    text-align: center;
+    align-items: center;
+    gap: 15px;
+    display: flex;
+    justify-content: center;
+
 }
 
 @media (max-width: 1024px) {
