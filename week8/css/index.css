@@ -217,9 +217,9 @@ body {
     .three {
         width: 100%;
         flex-direction: column;
-    }
-
-    .three .food {
-        width: 100%;
+        gap: 20px;
+        display: flex;
     }
 }
+
+

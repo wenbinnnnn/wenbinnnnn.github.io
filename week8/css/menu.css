@@ -71,3 +71,335 @@
     width: 469px;
 }
 
+.course {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.course-left {
+    flex: 1;
+}
+
+.course-left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.course-right {
+    flex: 1;
+}
+
+.main {
+    font-size: 42px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.menu-item {
+    padding: 14px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.menu-item:last-child {
+    border-bottom: none;
+}
+
+.menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 4px;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.price {
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.description {
+    font-family: 'Lora', serif;
+    font-size: 15px;
+    color: #444;
+    line-height: 1.3;
+}
+
+.dessert {
+    background-image: url(../images/Maskgroup2.png);
+    background-size: cover;
+    color: white;
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    height: 335px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    font-size: 50px;
+}
+
+.four {
+    display: flex;
+    padding: 40px;
+    align-items: end;
+    justify-content: center;
+    gap: 30px;
+    margin: 0 auto;
+}
+
+.dessert-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 0;
+}
+
+.title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.price {
+    font-size: 14px;
+}
+
+.card-image img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    margin: 0;
+}
+
+.dessert-card:nth-child(odd) .card-image img {
+    height: 390px;
+}
+
+.dessert-card:nth-child(even) .card-image img {
+    height: 350px;
+}
+
+.banner7 {
+    background-image: url(../images/bestcroctails.png);
+    background-size: cover;
+    background-position: center;
+    padding: 10%;
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.croctails {
+    width: 50%;
+}
+
+.best h4 {
+    font-family: 'Bebas Neue', Impact, sans-serif;
+    font-weight: 90;
+    line-height: 1;
+    font-size: 90px;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+}
+
+.town {
+    font-size: 25px;
+    letter-spacing: 3px;
+    color: #cccccc;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.crocdesc {
+    position: relative;
+    font-size: 20px;
+}
+
+.btn-about {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    color: #ffffff;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.header4 {
+    min-height: 480px;
+    background-image: url(../images/Rectangle\ 9.png), url(../images/Environment.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.last {
+    text-align: center;
+    font-size: 19px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.logo4 {
+    align-items: center;
+    gap: 15px;
+    display: flex;
+    justify-content: center;
+
+}
+
+@media (max-width: 1024px) {
+    .menuitems {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .three {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .three .food {
+        width: 100%;
+    }
+
+    .course {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .four {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dessert-card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dessert-card .card-header {
+        order: 1;
+        padding-bottom: 6px;
+    }
+
+    .dessert-card .card-image {
+        order: 2;
+    }
+
+    .dessert-card:nth-child(odd),
+    .dessert-card:nth-child(even) {
+        transform: none;
+    }
+
+    card-image img,
+    .dessert-card:nth-child(odd) .card-image img,
+    .dessert-card:nth-child(even) .card-image img {
+        width: 100%;
+        height: 100%;
+        aspect-ratio: auto;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 640px) {
+    .menuitems {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .three {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .three .food {
+        width: 100%;
+    }
+
+    .four {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        max-width: 100%;
+    }
+
+    .dessert-card {
+        display: flex;
+        flex-direction: column;
+        position: static;
+    }
+
+    .dessert-card .card-image {
+        order: 1;
+        width: 100%;
+    }
+
+    .dessert-card .card-image img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .dessert-card .card-header {
+        order: 2 !important;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 10px;
+        padding-bottom: 5px;
+        width: 100%;
+    }
+
+    .dessert-card .title {
+        color: #000000;
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 15px;
+        letter-spacing: 0.5px;
+        text-shadow: none;
+    }
+
+    .dessert-card .price {
+        color: #000000;
+        font-size: 13px;
+        font-weight: normal;
+        text-shadow: none;
+    }
+
+    .dessert-card .price::before {
+        content: '- ';
+    }
+}
