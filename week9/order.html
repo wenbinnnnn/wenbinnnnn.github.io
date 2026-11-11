@@ -75,18 +75,191 @@
                     <h3 class="dish-title">BUTTER-POACHED LOBSTER</h3>
                     <p class="description">Tender lobster gently poached in butter for a <br>rich, delicate finish.</p>
                     <p class="price">$ 88</p>
+                    <div class="card-actions">
+                        <form class="qty-form">
+                            <div class="value-button decrease" onclick="decreaseValue(this)">-</div>
+                            <input type="number" class="number-input" value="0" readonly />
+                            <div class="value-button increase" onclick="increaseValue(this)">+</div>
+                        </form>
+                        <button class="btn-add">ADD TO CART</button>
+                        <button class="btn-cart">VIEW CART</button>
+                    </div>
+                </div>
+            </div>
 
-                    <div class="dish-card">
-                        <div class="card-image">
-                            <img src="images/duck.png"
-                                alt="Duck Breast with Cherry Sauce">
-                        </div>
-                        <div class="card-body">
-                            <p class="tag">CHEF'S PICK</p>
-                            <h3 class="dish-title">DUCK BREAST WITH CHERRY SAUCE</h3>
-                            <p class="description">Juicy duck breast paired with a bright cherry sauce<br> for a
-                                sweet-savory balance.</p>
-                            <p class="price">$ 58</p>
+            <div class="dish-card">
+                <div class="card-image">
+                    <img src="images/duck.png" alt="Duck Breast with Cherry Sauce">
+                </div>
+                <div class="card-body">
+                    <p class="tag">CHEF'S PICK</p>
+                    <h3 class="dish-title">DUCK BREAST WITH CHERRY SAUCE</h3>
+                    <p class="description">Juicy duck breast paired with a bright cherry sauce for a
+                        sweet-savory balance.</p>
+                    <p class="price">$ 58</p>
+                    <div class="card-actions">
+                        <form class="qty-form">
+                            <div class="value-button decrease" onclick="decreaseValue(this)">-</div>
+                            <input type="number" class="number-input" value="0" readonly />
+                            <div class="value-button increase" onclick="increaseValue(this)">+</div>
+                        </form>
+
+                        <button class="btn-add">ADD TO CART</button>
+                        <button class="btn-cart">VIEW CART</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="horizontal-section">
+        <div class="horizontal-card">
+
+            <div class="card-image-left">
+                <img src="images/pork.png" alt="Twice Cooked Pork">
+            </div>
+
+            <div class="card-content-right">
+                <p class="tag">HOUSE FAVOURITE</p>
+                <h2 class="dish-title">TWICE COOKED PORK</h2>
+                <p class="description">Nunc nec neque cras id dui curabitur<br>blandit mollis lacus.</p>
+
+                <div class="card-actions">
+
+                    <form class="qty-form">
+                        <div class="value-button decrease" onclick="decreaseValue(this)">-</div>
+                        <input type="number" class="number-input" value="0" readonly />
+                        <div class="value-button increase" onclick="increaseValue(this)">+</div>
+                    </form>
+
+                    <button class="btn-add-white">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="menu-signatures">
+
+        <!-- 顶部标题 -->
+        <div class="signatures-header">
+            <p class="signatures-subtitle">CHEF'S SIGNATURES</p>
+            <h2 class="signatures-title">FINE DINING FAVORITES</h2>
+        </div>
+
+        <div class="card-grid-three">
+
+            <div class="dish-card">
+                <div class="card-image">
+                    <img src="images/salmon.png" alt="Ahi Salmon Nigiri">
+                </div>
+                <div class="card-body">
+                    <h3 class="dish-title">AHI SALMON NIGIRI</h3>
+                    <p class="description">Fresh salmon served nigiri-style with a<br>clean, delicate finish.</p>
+                    <p class="price">$ 28</p>
+                    <div class="card-actions">
+                        <form class="qty-form">
+                            <div class="value-button decrease" onclick="decreaseValue(this)">-</div>
+                            <input type="number" class="number-input" value="0" readonly />
+                            <div class="value-button increase" onclick="increaseValue(this)">+</div>
+                        </form>
+                        <button class="btn-add">ADD TO CART</button>
+                        <button class="btn-cart">VIEW CART</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card">
+                <div class="card-image">
+                    <img src="images/sushi.png" alt="Char Siu & Sushis">
+                </div>
+                <div class="card-body">
+                    <h3 class="dish-title">CHAR SIU & SUSHIS</h3>
+                    <p class="description">Cantonese barbecue pork paired with<br>an assortment of freshly prepared
+                        sushi.</p>
+                    <p class="price">$ 48</p>
+                    <div class="card-actions">
+                        <form class="qty-form">
+                            <div class="value-button decrease" onclick="decreaseValue(this)">-</div>
+                            <input type="number" class="number-input" value="0" readonly />
+                            <div class="value-button increase" onclick="increaseValue(this)">+</div>
+                        </form>
+                        <button class="btn-add">ADD TO CART</button>
+                        <button class="btn-cart">VIEW CART</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card">
+                <div class="card-image">
+                    <img src="images/rolls.png" alt="California Rolls">
+                </div>
+                <div class="card-body">
+                    <h3 class="dish-title">CALIFORNIA ROLLS</h3>
+                    <p class="description">Fresh sushi rolls filled with crab, avocado,<br>cucumber, and creamy
+                        mayonnaise.</p>
+                    <p class="price">$ 22</p>
+                    <div class="card-actions">
+                        <form class="qty-form">
+                            <div class="value-button decrease" onclick="decreaseValue(this)">-</div>
+                            <input type="number" class="number-input" value="0" readonly />
+                            <div class="value-button increase" onclick="increaseValue(this)">+</div>
+                        </form>
+                        <button class="btn-add">ADD TO CART</button>
+                        <button class="btn-cart">VIEW CART</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="checkout-banner">
+        <p class="checkout-subtitle">READY TO CHECKOUT?</p>
+        <h2 class="checkout-title">REVIEW YOUR CART</h2>
+        <p class="checkout-description">You still can edit your product quantity in the cart.</p>
+        <button class="btn-checkout">VIEW CART AND CHECKOUT</button>
+    </div>
+    <div class="header4">
+
+        <div class="last">
+
+            <div class="header-logo">
+                <img src="images/Group 185.png" alt="Romaliya Logo">
+            </div>
+
+            <p>
+                From the first welcome to the last bite, every detail is designed to create a<br>
+                memorable dining experience for you and your loved ones.
+            </p>
+
+            <div class="logo4">
+                <div><img src="images/facebook.png" alt="Facebook"></div>
+                <div><img src="images/x.png" alt="Twitter"></div>
+                <div><img src="images/instagram.png" alt="Instagram"></div>
+                <div><img src="images/youtube.png" alt="Youtube"></div>
+            </div>
+
+        </div>
+    </div>
+    <script>
+        function increaseValue(button) {
+            var input = button.previousElementSibling;
+            var value = parseInt(input.value, 10);
+            value = isNaN(value) ? 0 : value;
+            value++;
+            input.value = value;
+        }
+
+        function decreaseValue(button) {
+            var input = button.nextElementSibling;
+            var value = parseInt(input.value, 10);
+            value = isNaN(value) ? 0 : value;
+
+            if (value > 0) {
+                value--;
+            }
+            input.value = value;
+        }
+    </script>
 </body>
 
 </html>

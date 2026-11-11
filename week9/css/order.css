@@ -2,9 +2,11 @@
     box-sizing: border-box;
 }
 
-
 body {
     margin: 0;
+    background-color: #000000;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
 }
 
 .header {
@@ -24,7 +26,7 @@ body {
     background-image: url(../images/Rectangle\ 79.png), url(../images/cart1.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: center;
+    background-size: cover;
 }
 
 .title {
@@ -53,10 +55,10 @@ body {
 }
 
 .favourites {
-    background-color: white;
+    background-color: #ffffff;
     padding: 60px 150px;
     width: 100%;
-    box-sizing: border-box;
+    color: #000000;
 }
 
 .kitchen {
@@ -86,18 +88,807 @@ body {
 }
 
 .menu-signatures {
-    margin: 0;
-    padding: 40px;
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 80px 40px;
     background-color: #000000;
     color: #ffffff;
-    font-family: 'Arial', sans-serif;
-    box-sizing: border-box;
+}
+
+.signatures-subtitle {
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #888888;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.signatures-title {
+    font-size: 26px;
+    font-family: 'Impact', 'Bebas Neue', sans-serif;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+/* Base Card Content Styling */
+.card-body {
+    padding: 24px;
 }
 
 .tag {
-    font-size: 14px;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    color: #888888;
+    margin-bottom: 10px;
+    text-transform: uppercase;
 }
 
 .dish-title {
-    font-size: 30px;
+    font-size: 22px;
+    font-family: 'Impact', 'Bebas Neue', sans-serif;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+.description {
+    font-size: 14px;
+    font-family: 'Lora', Georgia, serif;
+    color: #cccccc;
+    line-height: 1.5;
+    margin-bottom: 16px;
+}
+
+.price {
+    font-size: 13px;
+    color: #c4a57b;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.card-grid {
+    display: flex;
+    gap: 30px;
+}
+
+.card-grid .dish-card {
+    flex: 1;
+    background-color: #2b2b2b;
+}
+
+.card-grid .card-image img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    display: block;
+    object-position: center;
+}
+
+.card-grid .card-actions {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.card-grid .qty-form {
+    display: flex;
+    margin: 0;
+}
+
+.card-grid .value-button {
+    width: 26px;
+    height: 32px;
+    line-height: 30px;
+    text-align: center;
+    background: #222222;
+    border: 1px solid #555555;
+    color: #ffffff;
+    cursor: pointer;
+    user-select: none;
+    font-size: 12px;
+}
+
+.card-grid .value-button.decrease {
+    border-right: none;
+}
+
+.card-grid .value-button.increase {
+    border-left: none;
+}
+
+.card-grid .number-input {
+    width: 28px;
+    height: 32px;
+    text-align: center;
+    background: #222222;
+    color: #ffffff;
+    border: 1px solid #555555;
+    outline: none;
+    font-size: 11px;
+}
+
+.card-grid .btn-add {
+    flex: 1;
+    height: 32px;
+    padding: 0 6px;
+    background-color: #c4a57b;
+    border: none;
+    color: #ffffff;
+    font-size: 9px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+}
+
+.card-grid .btn-cart {
+    flex: 1;
+    height: 32px;
+    padding: 0 6px;
+    background-color: transparent;
+    border: 1px solid #555555;
+    color: #ffffff;
+    font-size: 9px;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+}
+
+.horizontal-section {
+    display: flex;
+    justify-content: center;
+    padding: 80px 0;
+    background-color: #ffffff;
+    width: 100%;
+}
+
+.horizontal-card {
+    display: flex;
+    width: 1050px;
+    height: 420px;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.card-image-left {
+    width: 50%;
+    height: 100%;
+}
+
+.card-image-left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.card-content-right {
+    width: 50%;
+    padding: 60px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.btn-add-white {
+    height: 40px;
+    padding: 0 24px;
+    background-color: #ffffff;
+    border: none;
+    color: #000000;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.btn-add-white:hover {
+    background-color: #cccccc;
+}
+
+.horizontal-card .card-actions {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.horizontal-card .qty-form {
+    display: flex;
+    margin: 0;
+}
+
+.horizontal-card .value-button {
+    width: 36px;
+    height: 40px;
+    line-height: 38px;
+    text-align: center;
+    background: transparent;
+    border: 1px solid #444444;
+    color: #ffffff;
+    cursor: pointer;
+    user-select: none;
+    font-size: 14px;
+}
+
+.horizontal-card .value-button.decrease {
+    border-right: none;
+}
+
+.horizontal-card .value-button.increase {
+    border-left: none;
+}
+
+.horizontal-card .number-input {
+    width: 38px;
+    height: 40px;
+    text-align: center;
+    background: transparent;
+    color: #ffffff;
+    border: 1px solid #444444;
+    outline: none;
+    font-size: 13px;
+}
+
+.card-grid-three {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.card-grid-three .dish-card {
+    background-color: #262626;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-grid-three .card-image {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+}
+
+.card-grid-three .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.card-grid-three .card-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.card-grid-three .dish-title {
+    font-size: 18px;
+    margin: 0 0 10px 0;
+}
+
+.card-grid-three .description {
+    font-size: 12px;
+    color: #aaaaaa;
+    line-height: 1.5;
+    margin: 0 0 15px 0;
+    min-height: 36px;
+}
+
+.card-grid-three .price {
+    margin: 0 0 15px 0;
+}
+
+.card-grid-three .card-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    margin-top: auto;
+}
+
+.card-grid-three .qty-form {
+    display: flex;
+    width: 100%;
+    height: 44px;
+    margin: 0;
+}
+
+.card-grid-three .value-button {
+    flex: 1;
+    height: 100%;
+    line-height: 42px;
+    text-align: center;
+    background: #222222;
+    border: 1px solid #555555;
+    color: #ffffff;
+    cursor: pointer;
+    user-select: none;
+    font-size: 16px;
+}
+
+.card-grid-three .value-button.decrease {
+    border-right: none;
+}
+
+.card-grid-three .value-button.increase {
+    border-left: none;
+}
+
+.card-grid-three .number-input {
+    flex: 2;
+    height: 100%;
+    text-align: center;
+    background: #222222;
+    color: #ffffff;
+    border: 1px solid #555555;
+    outline: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.card-grid-three .btn-add {
+    width: 100%;
+    height: 44px;
+    background-color: #c4a57b;
+    border: none;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.card-grid-three .btn-cart {
+    width: 100%;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid #555555;
+    color: #ffffff;
+    font-size: 11px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.checkout-banner {
+    width: 100%;
+    background-color: #000000;
+    padding: 100px 20px;
+    text-align: center;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkout-subtitle {
+    font-size: 11px;
+    letter-spacing: 2.5px;
+    color: #aaaaaa;
+    margin: 0 0 12px 0;
+    text-transform: uppercase;
+    font-family: Arial, sans-serif;
+}
+
+.checkout-title {
+    font-size: 32px;
+    font-family: 'Impact', 'Bebas Neue', sans-serif;
+    letter-spacing: 1.5px;
+    margin: 0 0 20px 0;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.checkout-description {
+    font-size: 15px;
+    font-family: 'Lora', Georgia, serif;
+    color: #cccccc;
+    margin: 0 0 35px 0;
+}
+
+.btn-checkout {
+    background-color: #c4a57b;
+    border: none;
+    color: #ffffff;
+    padding: 16px 36px;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.2s ease;
+}
+
+.btn-checkout:hover {
+    background-color: #b39367;
+}
+
+.header4 {
+    min-height: 480px;
+    background-image: url(../images/Rectangle\ 9.png), url(../images/Environment.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.last {
+    text-align: center;
+    font-size: 19px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.logo4 {
+    align-items: center;
+    gap: 15px;
+    display: flex;
+    justify-content: center;
+
+}
+
+@media (max-width: 1024px) {
+    .menuitems {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .title {
+        margin-bottom: 20px;
+    }
+
+    .title p {
+        font-size: 0;
+    }
+
+    .title p::after {
+        content: "YOUR ORDER";
+        font-size: 15px;
+        color: #ffffff;
+        font-family: 'Work Sans', sans-serif;
+    }
+
+    .order h1 {
+        font-size: 0;
+    }
+
+    .order h1::after {
+        content: "CART";
+        font-size: 50px;
+        color: #ffffff;
+        font-family: 'Work Sans', sans-serif;
+        font-weight: bold;
+    }
+
+    .card-grid .card-actions {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .card-grid .qty-form {
+        display: flex;
+        width: 100%;
+        height: 38px;
+        margin: 0;
+    }
+
+    .card-grid .value-button {
+        flex: 1;
+        width: auto;
+        height: 100%;
+        line-height: 36px;
+        text-align: center;
+        background: #222222;
+        border: 1px solid #555555;
+        color: #ffffff;
+        font-size: 14px;
+        cursor: pointer;
+    }
+
+    .card-grid .value-button.decrease {
+        border-right: none;
+    }
+
+    .card-grid .value-button.increase {
+        border-left: none;
+    }
+
+    .card-grid .number-input {
+        flex: 3;
+        width: auto;
+        height: 100%;
+        text-align: center;
+        background: #222222;
+        color: #ffffff;
+        border: 1px solid #555555;
+        outline: none;
+        font-size: 13px;
+    }
+
+    .card-grid .btn-add {
+        width: 100%;
+        height: 44px;
+        line-height: 44px;
+        padding: 0;
+        background-color: #c4a57b;
+        border: none;
+        color: #ffffff;
+        font-size: 10px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        cursor: pointer;
+        box-sizing: border-box;
+    }
+
+    .card-grid .btn-cart {
+        width: 100%;
+        height: 44px;
+        line-height: 42px;
+        padding: 0;
+        background-color: transparent;
+        border: 1px solid #555555;
+        color: #ffffff !;
+        font-size: 10px;
+        letter-spacing: 1px;
+        cursor: pointer;
+        box-sizing: border-box;
+    }
+
+    .horizontal-section {
+        padding: 40px 20px;
+    }
+
+    .horizontal-card {
+        flex-direction: column;
+        width: 100%;
+        max-width: 550px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .card-image-left {
+        width: 100%;
+        height: 280px;
+    }
+
+    .card-content-right {
+        width: 100%;
+        padding: 24px 20px;
+        background-color: #000000;
+    }
+
+    .horizontal-card .card-actions {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+        margin-top: 24px;
+    }
+
+    .horizontal-card .qty-form {
+        display: flex;
+        width: 120px;
+        height: 40px;
+        margin: 0;
+    }
+
+    .horizontal-card .value-button {
+        width: 30px;
+        height: 100%;
+        line-height: 34px;
+        text-align: center;
+        background: transparent;
+        border: 1px solid #444444;
+        color: #ffffff;
+        font-size: 13px;
+    }
+
+    .horizontal-card .number-input {
+        width: 50px;
+        height: 100%;
+        text-align: center;
+        background: transparent;
+        border: 1px solid #444444;
+        color: #ffffff;
+        font-size: 12px;
+    }
+
+    .horizontal-card .btn-add-white {
+        flex: none;
+        height: 44px;
+        padding: 0 22px;
+        background-color: #ffffff;
+        color: #000000;
+        font-size: 9px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        cursor: pointer;
+    }
+
+    .card-grid-three {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px 24px;
+    }
+
+    .card-grid-three .dish-card {
+        background-color: #2b2b2b;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-grid-three .card-image {
+        width: 100%;
+        height: 240px;
+        overflow: hidden;
+    }
+
+    .card-grid-three .card-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    .card-grid-three .card-body {
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+
+    .card-grid-three .card-actions {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        margin-top: auto;
+    }
+
+    .card-grid-three .qty-form {
+        display: flex;
+        width: 100%;
+        height: 38px;
+        margin: 0;
+    }
+
+    .card-grid-three .value-button {
+        flex: 1;
+        height: 100%;
+        line-height: 36px;
+        text-align: center;
+        background: #222222;
+        border: 1px solid #555555;
+        color: #ffffff;
+        font-size: 14px;
+        cursor: pointer;
+    }
+
+    .card-grid-three .value-button.decrease {
+        border-right: none;
+    }
+
+    .card-grid-three .value-button.increase {
+        border-left: none;
+    }
+
+    .card-grid-three .number-input {
+        flex: 3;
+        height: 100%;
+        text-align: center;
+        background: #222222;
+        color: #ffffff;
+        border: 1px solid #555555;
+        outline: none;
+        font-size: 13px;
+    }
+
+    .card-grid-three .btn-add {
+        width: 100%;
+        height: 44px;
+        background-color: #c4a57b;
+        border: none;
+        color: #ffffff;
+        font-size: 11px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        cursor: pointer;
+    }
+
+    .card-grid-three .btn-cart {
+        width: 100%;
+        height: 44px;
+        background-color: transparent;
+        border: 1px solid #555555;
+        color: #ffffff;
+        font-size: 11px;
+        letter-spacing: 1px;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 640px) {
+    .menuitems {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    header.header,
+    .header {
+        background-color: #000000;
+        background: #000000;
+        position: relative;
+        z-index: 10;
+        width: 100%;
+        padding: 16px 24px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .header .logo,
+    .header-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .background {
+        height: 60vh;
+        min-height: 380px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .title {
+        padding-top: 0;
+        gap: 10px;
+        margin-bottom: 12px;
+    }
+
+    .title div {
+        width: 50px;
+        border-width: 1px;
+    }
+
+    .title p::after {
+        font-size: 13px;
+        letter-spacing: 2px;
+    }
+
+    .order {
+        margin: 0;
+    }
+
+    .order h1::after {
+        font-size: 36px;
+        letter-spacing: 2px;
+    }
+    
 }
