@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+}
+
+.header {
+    background: transparent;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.background {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/Rectangle\ 79.png), url(../images/cart1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: center;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 400px;
+    color: white;
+    font-size: 20px;
+    gap: 15px;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.title div {
+    width: 150px;
+    border: 1px solid white;
+}
+
+.order {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 25px;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.favourites {
+    background-color: white;
+    padding: 60px 150px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.kitchen {
+    font-family: "Work Sans", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.choose {
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.quantity {
+    font-family: "Lora", serif;
+}
+
+.cart button {
+    cursor: pointer;
+    width: 130px;
+    height: 40px;
+    color: black;
+    font-family: "Work Sans", sans-serif;
+    border: 1px solid #aaa;
+    background-color: transparent;
+}
+
+.menu-signatures {
+    margin: 0;
+    padding: 40px;
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+}
+
+.tag {
+    font-size: 14px;
+}
+
+.dish-title {
+    font-size: 30px;
+}
