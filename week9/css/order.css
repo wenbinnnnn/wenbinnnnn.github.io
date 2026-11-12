@@ -903,8 +903,10 @@ input[type=number]::-webkit-outer-spin-button {
         height: 280px;
     }
 
-    .card-grid .card-actions,
-    .card-grid-three .card-actions {
+    /* ========================================== */
+    /* 2. 第一组 (龙虾 & 鸭胸肉)：保持水平一排并排  */
+    /* ========================================== */
+    .card-grid .card-actions {
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -913,8 +915,7 @@ input[type=number]::-webkit-outer-spin-button {
         width: 100%;
     }
 
-    .card-grid .qty-form,
-    .card-grid-three .qty-form {
+    .card-grid .qty-form {
         display: flex;
         width: 84px;
         height: 36px;
@@ -922,8 +923,7 @@ input[type=number]::-webkit-outer-spin-button {
         margin: 0;
     }
 
-    .card-grid .value-button,
-    .card-grid-three .value-button {
+    .card-grid .value-button {
         flex: none;
         width: 26px;
         height: 100%;
@@ -935,18 +935,10 @@ input[type=number]::-webkit-outer-spin-button {
         font-size: 13px;
     }
 
-    .card-grid .value-button.decrease,
-    .card-grid-three .value-button.decrease {
-        border-right: none;
-    }
+    .card-grid .value-button.decrease { border-right: none; }
+    .card-grid .value-button.increase { border-left: none; }
 
-    .card-grid .value-button.increase,
-    .card-grid-three .value-button.increase {
-        border-left: none;
-    }
-
-    .card-grid .number-input,
-    .card-grid-three .number-input {
+    .card-grid .number-input {
         flex: none;
         width: 32px;
         height: 100%;
@@ -957,8 +949,7 @@ input[type=number]::-webkit-outer-spin-button {
         font-size: 12px;
     }
 
-    .card-grid .btn-add,
-    .card-grid-three .btn-add {
+    .card-grid .btn-add {
         flex: 1;
         width: auto;
         height: 36px;
@@ -973,8 +964,7 @@ input[type=number]::-webkit-outer-spin-button {
         white-space: nowrap;
     }
 
-    .card-grid .btn-cart,
-    .card-grid-three .btn-cart {
+    .card-grid .btn-cart {
         flex: 1;
         width: auto;
         height: 36px;
@@ -986,5 +976,74 @@ input[type=number]::-webkit-outer-spin-button {
         font-size: 9px;
         letter-spacing: 0.5px;
         white-space: nowrap;
+    }
+
+    /* ========================================== */
+    /* 3. 第二组 (Salmon / Sushi / Rolls)：        */
+    /*    Cart 按钮在下面，三行垂直通栏排列         */
+    /* ========================================== */
+    .card-grid-three .card-actions {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .card-grid-three .qty-form {
+        display: flex;
+        width: 100%;
+        height: 40px;
+        margin: 0;
+    }
+
+    .card-grid-three .value-button {
+        flex: 1;
+        width: auto;
+        height: 100%;
+        line-height: 38px;
+        text-align: center;
+        background: #222222;
+        border: 1px solid #555555;
+        color: #ffffff;
+        font-size: 14px;
+    }
+
+    .card-grid-three .value-button.decrease { border-right: none; }
+    .card-grid-three .value-button.increase { border-left: none; }
+
+    .card-grid-three .number-input {
+        flex: 3;
+        width: auto;
+        height: 100%;
+        text-align: center;
+        background: #222222;
+        color: #ffffff;
+        border: 1px solid #555555;
+        font-size: 13px;
+    }
+
+    .card-grid-three .btn-add {
+        width: 100%;
+        height: 44px;
+        line-height: 44px;
+        padding: 0;
+        background-color: #c4a57b;
+        border: none;
+        color: #ffffff;
+        font-size: 11px;
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+
+    .card-grid-three .btn-cart {
+        width: 100%;
+        height: 44px;
+        line-height: 42px;
+        padding: 0;
+        background-color: transparent;
+        border: 1px solid #555555;
+        color: #ffffff;
+        font-size: 11px;
+        letter-spacing: 1px;
     }
 }
