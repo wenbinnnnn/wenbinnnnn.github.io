@@ -890,5 +890,101 @@ input[type=number]::-webkit-outer-spin-button {
         font-size: 36px;
         letter-spacing: 2px;
     }
-    
+
+    .card-grid,
+    .card-grid-three {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .card-grid .card-image,
+    .card-grid-three .card-image {
+        height: 280px;
+    }
+
+    .card-grid .card-actions,
+    .card-grid-three .card-actions {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 8px;
+        width: 100%;
+    }
+
+    .card-grid .qty-form,
+    .card-grid-three .qty-form {
+        display: flex;
+        width: 84px;
+        height: 36px;
+        flex-shrink: 0;
+        margin: 0;
+    }
+
+    .card-grid .value-button,
+    .card-grid-three .value-button {
+        flex: none;
+        width: 26px;
+        height: 100%;
+        line-height: 34px;
+        text-align: center;
+        background: transparent;
+        border: 1px solid #555555;
+        color: #ffffff;
+        font-size: 13px;
+    }
+
+    .card-grid .value-button.decrease,
+    .card-grid-three .value-button.decrease {
+        border-right: none;
+    }
+
+    .card-grid .value-button.increase,
+    .card-grid-three .value-button.increase {
+        border-left: none;
+    }
+
+    .card-grid .number-input,
+    .card-grid-three .number-input {
+        flex: none;
+        width: 32px;
+        height: 100%;
+        text-align: center;
+        background: transparent;
+        border: 1px solid #555555;
+        color: #ffffff;
+        font-size: 12px;
+    }
+
+    .card-grid .btn-add,
+    .card-grid-three .btn-add {
+        flex: 1;
+        width: auto;
+        height: 36px;
+        line-height: 36px;
+        padding: 0 6px;
+        background-color: #c4a57b;
+        border: none;
+        color: #ffffff;
+        font-size: 9px;
+        font-weight: bold;
+        letter-spacing: 0.5px;
+        white-space: nowrap;
+    }
+
+    .card-grid .btn-cart,
+    .card-grid-three .btn-cart {
+        flex: 1;
+        width: auto;
+        height: 36px;
+        line-height: 34px;
+        padding: 0 6px;
+        background-color: transparent;
+        border: 1px solid #555555;
+        color: #ffffff;
+        font-size: 9px;
+        letter-spacing: 0.5px;
+        white-space: nowrap;
+    }
 }
