@@ -134,7 +134,6 @@ body {
 .dining {
     display: flex;
     background-image: url('../images/dining.jpg');
-    background-repeat: no-repeat;
     width: 100%;
     text-align: center;
     justify-content: center;
