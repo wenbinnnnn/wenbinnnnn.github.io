@@ -6,6 +6,7 @@
 
 body {
     margin: 0;
+    overflow-x: hidden;
 }
 
 .header {
@@ -120,8 +121,11 @@ body {
 
 .hamburger {
     display: none;
-    width: 20px;
     cursor: pointer;
+    color: #ffffff;      
+    font-size: 32px;     
+    line-height: 1;
+    z-index: 1201;     
 }
 
 .elegance {
@@ -136,38 +140,417 @@ body {
 }
 
 .three {
-    padding: 80px 0;
+    padding: 80px 10%;
     background-color: rgb(255, 255, 255);
     color: black;
-    display: flex;
-    gap: 20px;
     text-align: center;
+}
+
+.three .title {
+    font-size: 45px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.three .gallery {
+    display: flex;
+    gap: 50px;
     align-items: center;
 }
 
-.three .details {
+.three .details1,
+.three .details3 {
     flex: 1;
 }
 
-.three .img {
-    background-image: url(../images/details\ 1.png);
-    background-size: cover;
-    background-position: center;
-    height: 250px;
+.three .details2 {
+    flex: 1.4;
 }
 
-.three .details2 {
-    flex: 2;
+.three .img {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.three .details1 .img {
+    background-image: url('../images/details 1.png');
+    height: 320px;
 }
 
 .three .details2 .img {
-    background-image: url(../images/details\ 2.png);
-    height: 550px;
+    background-image: url('../images/details 2.png');
+    height: 480px;
 }
 
 .three .details3 .img {
-    background-image: url(../images/details\ 3.png);
+    background-image: url('../images/details 3.png');
+    height: 320px;
+}
+
+.four {
+    padding-top: 80px;
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+}
+
+.four .gallery-header {
+    padding: 0 20px;
+    margin-bottom: 45px;
+}
+
+.four .gallery-header h2 {
+    font-size: 45px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 0 0 12px 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.four .gallery-header p {
+    font-size: 20px;
+    color: #333333;
+    margin: 0;
+    font-family: 'Georgia', serif;
+}
+
+.four .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+    width: 100%;
+}
+
+.four .grid-item {
+    width: 100%;
+    aspect-ratio: 384 / 365.5;
     background-size: cover;
     background-position: center;
-    height: 250px;
+    transition: transform 0.3s ease;
+}
+
+.four .img1 {
+    background-image: url('../images/gallery1.jpg');
+}
+
+.four .img2 {
+    background-image: url('../images/gallery2.jpg');
+}
+
+.four .img3 {
+    background-image: url('../images/gallery3.jpg');
+}
+
+.four .img4 {
+    background-image: url('../images/gallery4.jpg');
+}
+
+.four .img5 {
+    background-image: url('../images/gallery5.jpg');
+}
+
+.four .img6 {
+    background-image: url('../images/gallery6.jpg');
+}
+
+.four .img7 {
+    background-image: url('../images/gallery7.jpg');
+}
+
+.four .img8 {
+    background-image: url('../images/gallery8.jpg');
+}
+
+.five {
+    padding: 100px 10%;
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+}
+
+.five .title {
+    font-size: 46px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 0 0 55px 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.five .reviews {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.five .review-card {
+    flex: 1;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 50px 25px 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 290px;
+    box-sizing: border-box;
+}
+
+.five .review-card h3 {
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 0 0 30px 0;
+}
+
+.five .review-card p {
+    font-size: 13.5px;
+    line-height: 1.8;
+    color: #ffffff;
+    margin: 0 0 30px 0;
+    font-family: 'Georgia', serif;
+}
+
+.five .review-card .stars {
+    color: #c5a059;
+    font-size: 22px;
+    letter-spacing: 10px;
+    padding-left: 10px;
+}
+
+.header4 {
+    min-height: 480px;
+    background-image: url(../images/Rectangle\ 9.png), url(../images/last.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.last {
+    text-align: center;
+    font-size: 19px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo4 {
+    align-items: center;
+    gap: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 1024px) {
+    .hamburger {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        z-index: 1201;
+    }
+
+    .menuitems img {
+        display: none;
+    }
+
+    .menuitems {
+        display: flex;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100vh;
+        background-color: #1f1f1f;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+        opacity: 0;
+        transition: right 0.35s ease, opacity 0.35s ease;
+        z-index: 1200;
+    }
+
+    .menuitems.active {
+        right: 0;
+        opacity: 1;
+    }
+
+    .menuitems a {
+        font-size: 26px;
+        font-family: Georgia, serif;
+        color: #ffffff;
+    }
+
+    .three {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .three .food {
+        width: 100%;
+    }
+
+    header,
+    .header,
+    .navbar {
+        position: static;
+        background-color: #000000;
+    }
+
+    .banner {
+        height: auto;
+        min-height: 720px;
+    }
+
+    .bannerright {
+        display: none;
+    }
+
+    .bannerleft {
+        flex: none;
+        width: 100%;
+        background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('../images/restaurant2.jpg') center/cover no-repeat;
+        padding: 180px 13% 160px 13%;
+        box-sizing: border-box;
+    }
+
+    .banner-content {
+        font-size: 13px;
+        letter-spacing: 2px;
+        color: #d4d4d4;
+    }
+
+    .banner-welcome h1 {
+        font-size: 52px;
+        margin: 15px 0 25px 0;
+    }
+
+    .banner-desc {
+        font-size: 16px;
+        line-height: 1.75;
+        color: #e0e0e0;
+        max-width: 450px;
+    }
+
+    .three {
+        padding: 60px 8%;
+    }
+
+    .three .title {
+        font-size: 32px;
+        margin-bottom: 35px;
+    }
+
+    .three .gallery {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .three .details1,
+    .three .details2,
+    .three .details3 {
+        flex: none;
+        width: 100%;
+    }
+
+    .three .details1 .img,
+    .three .details2 .img,
+    .three .details3 .img {
+        height: auto;
+        aspect-ratio: 1 / 1.05;
+    }
+
+    .four {
+        padding: 60px 5% 40px;
+    }
+
+    .four .gallery-header {
+        padding: 0;
+        margin-bottom: 30px;
+    }
+
+    .four .gallery-header h2 {
+        font-size: 32px;
+        margin-bottom: 8px;
+    }
+
+    .four .gallery-header p {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
+    .four .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0;
+    }
+
+    .four .grid-item {
+        aspect-ratio: 1 / 1.08;
+    }
+
+    .five {
+        padding: 60px 8%;
+    }
+
+    .five .title {
+        font-size: 32px;
+        margin-bottom: 40px;
+    }
+
+    .five .reviews {
+        flex-direction: column;
+        gap: 45px;
+    }
+
+    .five .review-card {
+        flex: none;
+        width: 100%;
+        padding: 45px 25px 40px;
+        min-height: 240px;
+    }
+
+    .five .review-card h3 {
+        font-size: 18px;
+        margin-bottom: 22px;
+    }
+
+    .five .review-card p {
+        font-size: 17px;
+        line-height: 1.7;
+        margin-bottom: 25px;
+    }
+
+    .five .review-card .stars {
+        font-size: 25px;
+        letter-spacing: 12px;
+        padding-left: 12px;
+    }
+}
+
+@media (max-width: 640px) {
+    .four {
+        padding: 50px 0 0 0;
+    }
+    
+    .four .gallery-header {
+        padding: 0 20px;
+        margin-bottom: 30px;
+    }
+
+    .four .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .four .grid-item {
+        aspect-ratio: 1 / 1.15;
+    }
 }

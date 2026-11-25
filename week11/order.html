@@ -15,16 +15,17 @@
             <img src="images/Group 185.png" alt="Positivius Logo" width="120">
         </div>
 
-        <div class="menuitems">
-            <div><a href="index.html">Home</index></a></div>
+        <div class="menuitems" id="mobile-menu">
+            <div><a href="index.html">Home</a></div>
             <div><a href="menu.html">Menu</a></div>
             <div><a href="order.html">Order</a></div>
             <div><a href="promotion.html">Promotion</a></div>
-            <div><a href=>About US</a></div>
-            <div><a href=>Our Restaurant</a></div>
-            <img src="images/order 1.png">
+            <div><a href="#">About US</a></div>
+            <div><a href="restaurant.html">Our Restaurant</a></div>
+            <img src="images/order 1.png" alt="Order">
         </div>
-        <div class="hamburger">
+
+        <div class="hamburger" id="menu-toggle">
             <img src="images/hamburger.png" alt="Hamburger Menu" width="20">
         </div>
     </div>
@@ -39,9 +40,9 @@
             <h1>ORDER ONLINE</h1>
         </div>
     </div>
+
     <div class="favourites">
         <div class="kitchen">
-
             <div class="text-group">
                 <p class="subtitle">FROM OUR KITCHEN TO YOUR TABLE</p>
                 <div class="choose">
@@ -58,14 +59,14 @@
             </div>
         </div>
     </div>
-    <div class="menu-signatures">
 
+    <div class="menu-signatures">
         <div class="signatures-header">
             <p class="signatures-subtitle">CHEF'S SIGNATURES</p>
             <h2 class="signatures-title">FINE DINING FAVORITES</h2>
         </div>
-        <div class="card-grid">
 
+        <div class="card-grid">
             <div class="dish-card">
                 <div class="card-image">
                     <img src="images/lobster.png" alt="Butter-Poached Lobster">
@@ -103,18 +104,16 @@
                             <input type="number" class="number-input" value="0" readonly />
                             <div class="value-button increase" onclick="increaseValue(this)">+</div>
                         </form>
-
                         <button class="btn-add">ADD TO CART</button>
                         <button class="btn-cart">VIEW CART</button>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
+
     <div class="horizontal-section">
         <div class="horizontal-card">
-
             <div class="card-image-left">
                 <img src="images/pork.png" alt="Twice Cooked Pork">
             </div>
@@ -125,28 +124,24 @@
                 <p class="description">Nunc nec neque cras id dui curabitur<br>blandit mollis lacus.</p>
 
                 <div class="card-actions">
-
                     <form class="qty-form">
                         <div class="value-button decrease" onclick="decreaseValue(this)">-</div>
                         <input type="number" class="number-input" value="0" readonly />
                         <div class="value-button increase" onclick="increaseValue(this)">+</div>
                     </form>
-
                     <button class="btn-add-white">ADD TO CART</button>
                 </div>
             </div>
         </div>
     </div>
-    <div class="menu-signatures">
 
-        <!-- 顶部标题 -->
+    <div class="menu-signatures">
         <div class="signatures-header">
             <p class="signatures-subtitle">CHEF'S SIGNATURES</p>
             <h2 class="signatures-title">FINE DINING FAVORITES</h2>
         </div>
 
         <div class="card-grid-three">
-
             <div class="dish-card">
                 <div class="card-image">
                     <img src="images/salmon.png" alt="Ahi Salmon Nigiri">
@@ -208,7 +203,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 
@@ -218,10 +212,9 @@
         <p class="checkout-description">You still can edit your product quantity in the cart.</p>
         <button class="btn-checkout">VIEW CART AND CHECKOUT</button>
     </div>
+
     <div class="header4">
-
         <div class="last">
-
             <div class="header-logo">
                 <img src="images/Group 185.png" alt="Romaliya Logo">
             </div>
@@ -237,9 +230,10 @@
                 <div><img src="images/instagram.png" alt="Instagram"></div>
                 <div><img src="images/youtube.png" alt="Youtube"></div>
             </div>
-
         </div>
     </div>
+
+    <script src="js/mobile-menu.js"></script>
     <script>
         function increaseValue(button) {
             var input = button.previousElementSibling;
